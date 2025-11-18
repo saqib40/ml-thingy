@@ -1,0 +1,1 @@
+This model is for this [competition](https://www.kaggle.com/competitions/titanic)
