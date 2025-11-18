@@ -1,0 +1,1 @@
+For this [competition](https://www.kaggle.com/competitions/digit-recognizer/data)
