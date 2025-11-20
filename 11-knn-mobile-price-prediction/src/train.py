@@ -3,6 +3,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
 import pandas as pd
 from sklearn.model_selection import cross_val_score, StratifiedKFold
+from sklearn.decomposition import PCA
 
 df = pd.read_csv("../data/train.csv")
 X = df.drop("price_range", axis=1)
@@ -10,7 +11,8 @@ y = df["price_range"]
 
 pipe = Pipeline([
     ('scaler', StandardScaler()),
-    ('knn', KNeighborsClassifier(n_neighbors=34))
+    ("pca", PCA(n_components=0.85)),   # 85% variance
+    ('knn', KNeighborsClassifier(n_neighbors=40))
 ])
 
 # stratified k-fold is preferred for classification
