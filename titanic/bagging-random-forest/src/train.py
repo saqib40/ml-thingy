@@ -85,10 +85,10 @@ n 170: F1 weighted 0.8180137079305465
 """
 
 clf = RandomForestClassifier(
-        n_estimators=110,
+        n_estimators=100,
         max_features='sqrt',
-        max_depth=None,
-        min_samples_leaf=1,
+        max_depth=10,
+        min_samples_leaf=4,
         bootstrap=True,
         oob_score=True,
         n_jobs=-1,
