@@ -1,1 +1,25 @@
 .venv
+
+# OS junk
+.DS_Store
+__MACOSX/
+*.Zone.Identifier
+
+# Python / ML junk
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+.env/
+
+# Model artifacts (optional – recommended)
+*.pkl
+*.h5
+*.pt
+*.ckpt
+
+# Data (optional – if datasets are large)
+data/*.csv
+data/*.zip
